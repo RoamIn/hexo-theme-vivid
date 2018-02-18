@@ -1,0 +1,23 @@
+@import "variables";
+@import "mixins";
+@import "partials/menu";
+@import "partials/header";
+@import "partials/footer";
+
+@import "index/article-card";
+
+body {
+    min-height: 100vh;
+    //background-image: url("../img/bg.jpg");
+    //background-position: center center;
+    //background-repeat: no-repeat;
+    //background-attachment: fixed;
+    //background-size: cover;
+    background-color: #f6f6f6;
+
+    @include hide-scrollbar;
+}
+
+main {
+    padding: 30px 15px 40px;
+}

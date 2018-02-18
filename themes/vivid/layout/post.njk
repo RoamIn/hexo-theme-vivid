@@ -1,0 +1,13 @@
+{% extends 'common/layout.njk' %}
+
+{% block body %}
+    <article id="post">
+        <h1>{{ page.title }}</h1>
+        <time datetime="{{ page.date }}">{{ date(page.date) }}</time>
+        <hr>
+        {#to decide if escapes #}
+        {{ page.content }}
+    </article>
+
+    {{ paginator() }}
+{% endblock %}

@@ -1,0 +1,32 @@
+@mixin custom-scrollbar($axis) {
+    @if $axis {
+        overflow-#{ $axis }: auto;
+    } @else {
+        overflow: auto;
+    }
+
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        background-clip: content-box;
+        border-top: 3px solid rgba(255, 255, 255, 0);
+        border-right: 3px solid rgba(255, 255, 255, 0);
+        border-bottom: 3px solid rgba(255, 255, 255, 0);
+    }
+
+    &:hover::-webkit-scrollbar-thumb {
+        background-color: #bbb;
+    }
+}
+
+@mixin hide-scrollbar() {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

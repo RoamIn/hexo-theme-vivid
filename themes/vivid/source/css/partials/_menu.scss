@@ -1,0 +1,70 @@
+.menu {
+    $menu-width: 256px;
+
+    .switch {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        padding: 8px;
+        width: 40px;
+        height: 40px;
+        border: none;
+        box-sizing: border-box;
+        outline: none;
+        background: none;
+        fill: #3c3c3c;
+        cursor: pointer;
+        user-select: none;
+        transition: left .2s ease;
+    }
+
+    .drawer {
+        z-index: 2;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+
+        @include custom-scrollbar(y);
+        width: $menu-width;
+        background-color: #fefefe;
+        transform: translateX(-100%);
+        transition: transform .2s ease;
+
+        .nav-item {
+            display: block;
+            padding: 0 16px 0 12px;
+            height: 36px;
+            line-height: 36px;
+            font-size: 18px;
+
+            &.active {
+                background-color: #3c3c3c;
+            }
+        }
+    }
+
+    .backdrop {
+        z-index: 1;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity .2s ease;
+    }
+
+    &.active {
+        .drawer {
+            transform: translateX(0);
+        }
+
+        .backdrop {
+            display: block;
+            opacity: 1;
+        }
+    }
+}

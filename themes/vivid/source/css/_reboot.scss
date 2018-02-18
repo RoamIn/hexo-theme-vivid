@@ -1,0 +1,35 @@
+@import "fonts/futura";
+@import "fonts/raleway";
+
+:root {
+    font-family: RalewayRegular, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    //padding-left: calc(100vw - 100%); // avoid scrollbar width
+}
+
+body,
+p,
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+textarea {
+    margin: 0; // Remove the margin in Firefox and Safari
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+a {
+    text-decoration: none;
+}

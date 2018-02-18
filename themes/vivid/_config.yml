@@ -1,0 +1,18 @@
+# html lang
+language: en
+
+# main menu navigation
+menu:
+  Home: /
+  About: /about
+  Contact: /contact
+  Archives: /archives
+
+favicon: favicon/favicon.ico
+
+stylesheets:
+- /css/common.css
+- /css/index.css
+
+scripts:
+- /js/menu.js

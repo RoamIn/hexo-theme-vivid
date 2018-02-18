@@ -1,0 +1,29 @@
+@import "variables";
+@import "mixins";
+
+body {
+    @include full-page();
+
+    background: #111;
+}
+
+.error {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+
+    font-size: 64px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.code {
+    color: red;
+    text-shadow: 0 0 80px #ff0000, 0 0 30px #B22222, 0 0 6px #8B0000;
+}
+
+.msg {
+    color: #FFF;
+    text-shadow: 0 0 80px #FFF, 0 0 30px #00F000, 0 0 6px #0000FF;
+}
