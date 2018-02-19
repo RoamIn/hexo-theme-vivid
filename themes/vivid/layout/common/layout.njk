@@ -1,41 +1,7 @@
-{% set pageTitle = page.title or config.subtitle or '' %}
-
-{% if is_archive() %}
-    {% set pageTitle = 'Archives' %}
-{% endif %}
-
-{% if is_tag() %}
-    {% set pageTitle = 'Tag: ' + page.tag %}
-{% endif %}
-
-{% if is_category() %}
-    {% set pageTitle = 'Category: ' + page.category %}
-{% endif %}
-
-{% if is_month() %}
-    {% set pageTitle = pageTitle + ': ' + page.month + '/' + page.year %}
-{% endif %}
-
-{% if is_year() %}
-    {% set pageTitle = pageTitle + ': ' + page.year %}
-{% endif %}
-
-{% set pageTitle = pageTitle + ' [ ' + config.title + ' ]' %}
-
 <!doctype html>
 <html lang="{{ config.language }}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>{{ pageTitle }}</title>
-    {{ favicon_tag(theme.favicon) }}
-    {% if theme.stylesheets !== undefined and theme.stylesheets.length > 0 %}
-        {# stylesheet list from config.yml #}
-        {% for url in theme.stylesheets %}
-            {{ css(url) }}
-        {% endfor %}
-    {% endif %}
-</head>
+{% include './head.njk' %}
+
 <body>
 {% include './header.njk' %}
 {% include './menu.njk' %}
@@ -44,14 +10,11 @@
     {% block body %}{% endblock %}
 </main>
 
+{% include './back-to-top.njk' %}
 {% include './footer.njk' %}
 
-{% if theme.scripts !== undefined and theme.scripts.length > 0 %}
-    {# scripts list from config.yml #}
-    {% for url in theme.scripts %}
-        {{ js(url) }}
-    {% endfor %}
-{% endif %}
-
+{% block scripts %}
+    {% include './scripts.njk' %}
+{% endblock %}
 </body>
 </html>

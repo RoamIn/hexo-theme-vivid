@@ -11,8 +11,10 @@ menu:
 favicon: favicon/favicon.ico
 
 stylesheets:
+- /font/icon/iconfont.css
 - /css/common.css
-- /css/index.css
 
 scripts:
+- /font/icon/iconfont.js
+- /js/utils.js
 - /js/menu.js

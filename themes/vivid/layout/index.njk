@@ -4,3 +4,8 @@
     {% include 'partials/index/article.njk' %}
     {% include 'common/pagination.njk' %}
 {% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    {{ js('/js/back-to-top.js') }}
+{% endblock %}

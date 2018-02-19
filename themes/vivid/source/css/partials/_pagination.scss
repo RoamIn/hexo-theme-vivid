@@ -1,0 +1,44 @@
+.pagination {
+    text-align: center;
+    line-height: 34px;
+    font-size: 0;
+
+    .page-number {
+        display: inline-block;
+        margin: 0 4px;
+        padding: 0 10px;
+        min-width: 34px;
+        font-size: 14px;
+        font-family: FuturaLight;
+        text-align: center;
+        color: #3c3c3c;
+        border-radius: 3px;
+        background-color: #fefefe;
+
+        &.current {
+            color: #fff;
+            background-color: #e74a39;
+        }
+    }
+
+    .extend {
+        @extend .page-number;
+
+        &.prev {
+            margin-left: 0;
+        }
+        &.next {
+            margin-right: 0;
+        }
+
+        &.disabled {
+            color: #bbb;
+        }
+    }
+
+    .space {
+        display: inline-block;
+        margin: 0 6px;
+        font-size: 14px;
+    }
+}
