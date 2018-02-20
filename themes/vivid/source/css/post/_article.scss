@@ -1,0 +1,37 @@
+article {
+    margin: 0 auto;
+    padding: 40px;
+    width: 1000px;
+    border-radius: 3px;
+    background-color: #fff;
+
+    @media screen and (max-width: 1169px) {
+        width: calc(100% - 30px);
+    }
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        padding: 40px 36px;
+    }
+
+    header {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    .post-title {
+        font-size: 32px;
+    }
+
+    .post-meta {
+        line-height: 24px;
+        font-size: 12px;
+        color: #999;
+    }
+
+    .post-meta-divider {
+        margin: 0 0.5em;
+    }
+
+    .post-body {
+    }
+}

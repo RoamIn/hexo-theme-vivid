@@ -2,8 +2,14 @@
 @import "variables";
 @import "mixins";
 
+// Fonts
+@import "fonts";
+
 // Reset
 @import "reboot";
 
 // Utility classes
 @import "utilities";
+
+// Partial
+@import "partial";

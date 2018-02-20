@@ -32,6 +32,10 @@
         {{ css(url) }}
     {% endfor %}
 {% endif %}
+
 {% if is_home() %}
     {{ css('css/index.css') }}
+{% endif %}
+{% if is_post() %}
+    {{ css('css/post.css') }}
 {% endif %}

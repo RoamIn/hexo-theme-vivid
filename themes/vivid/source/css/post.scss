@@ -1,7 +1,9 @@
 @import "variables";
 @import "mixins";
 
-@import "index/article-card";
+@import "markdown";
+
+@import "post/article";
 
 body {
     min-height: 100vh;
@@ -12,4 +14,8 @@ body {
 
 main {
     padding: 30px 15px 40px;
+
+    @media screen and (max-width: 767px) {
+        padding: 0;
+    }
 }

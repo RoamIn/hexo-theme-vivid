@@ -1,11 +1,6 @@
-{% extends 'common/layout.njk' %}
+{% extends 'partial/layout.njk' %}
 
 {% block body %}
-    {% include 'partials/index/article.njk' %}
-    {% include 'common/pagination.njk' %}
-{% endblock %}
-
-{% block scripts %}
-    {{ super() }}
-    {{ js('/js/back-to-top.js') }}
+    {% include 'index/article-card-list.njk' %}
+    {% include 'partial/pagination.njk' %}
 {% endblock %}

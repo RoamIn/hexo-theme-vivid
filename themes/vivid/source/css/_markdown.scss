@@ -1,0 +1,10 @@
+.markdown {
+    @import "markdown/a";
+    @import "markdown/blockquote";
+    @import "markdown/code";
+    @import "markdown/h";
+    @import "markdown/img";
+    @import "markdown/list";
+    @import "markdown/p";
+    @import "markdown/table";
+}

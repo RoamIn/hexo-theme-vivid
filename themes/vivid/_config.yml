@@ -5,8 +5,8 @@ language: en
 menu:
   Home: /
   About: /about
-  Contact: /contact
-  Archives: /archives
+  Archive: /archives
+  Tag: /tags
 
 favicon: favicon/favicon.ico
 
@@ -18,3 +18,4 @@ scripts:
 - /font/icon/iconfont.js
 - /js/utils.js
 - /js/menu.js
+- /js/back-to-top.js
