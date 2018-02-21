@@ -1,4 +1,4 @@
-@mixin custom-scrollbar($axis) {
+@mixin custom-scrollbar($axis: false, $auto-visible: false) {
     @if $axis {
         overflow-#{ $axis }: auto;
     } @else {
@@ -6,19 +6,43 @@
     }
 
     &::-webkit-scrollbar {
-        width: 6px;
+        @if $axis == y {
+            width: 6px;
+        } @else if $axis == x{
+            height: 6px;
+        } @else {
+            width: 6px;
+            height: 6px;
+        }
     }
 
     &::-webkit-scrollbar-thumb {
         background-color: transparent;
         background-clip: content-box;
-        border-top: 3px solid rgba(255, 255, 255, 0);
-        border-right: 3px solid rgba(255, 255, 255, 0);
-        border-bottom: 3px solid rgba(255, 255, 255, 0);
+
+        @if $axis == y {
+            border-top: 3px solid rgba(255, 255, 255, 0);
+            border-right: 3px solid rgba(255, 255, 255, 0);
+            border-bottom: 3px solid rgba(255, 255, 255, 0);
+        } @else if $axis == x{
+            border-left: 3px solid rgba(255, 255, 255, 0);
+            border-right: 3px solid rgba(255, 255, 255, 0);
+            border-bottom: 3px solid rgba(255, 255, 255, 0);
+        } @else {
+            border-right: 3px solid rgba(255, 255, 255, 0);
+            border-bottom: 3px solid rgba(255, 255, 255, 0);
+        }
+
     }
 
-    &:hover::-webkit-scrollbar-thumb {
-        background-color: #bbb;
+    @if $auto-visible {
+        &::-webkit-scrollbar-thumb {
+            background-color: #bbb;
+        }
+    } @else {
+        &:hover::-webkit-scrollbar-thumb {
+            background-color: #bbb;
+        }
     }
 }
 

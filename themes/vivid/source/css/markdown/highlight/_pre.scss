@@ -1,0 +1,81 @@
+pre {
+    .comment {
+        color: $color_pablo_approx;
+    }
+    .keyword {
+        color: $color_turquoise_blue_approx;
+    }
+    .function {
+        color: $white;
+        .keyword {
+            color: $color_turquoise_blue_approx;
+        }
+        .title {
+            color: $color_atlantis_approx;
+        }
+    }
+    .class {
+        color: $color_atlantis_approx;
+        .params {
+            color: $color_turquoise_blue_approx;
+        }
+    }
+    .tag {
+        color: $white;
+    }
+    .doctype {
+        color: $white;
+    }
+    .params {
+        color: $white;
+    }
+    .css {
+        .value {
+            color: $white;
+        }
+        ~ * {
+            .tag {
+                color: $color_radical_red_approx;
+            }
+            .class {
+                color: $color_atlantis_approx;
+            }
+            .id {
+                color: $color_tree_poppy_approx;
+            }
+        }
+    }
+    .title {
+        color: $color_radical_red_approx;
+    }
+    .at_rule {
+        color: $color_radical_red_approx;
+        .keyword {
+            color: $color_radical_red_approx;
+        }
+    }
+    .preprocessor {
+        color: $color_radical_red_approx;
+        .keyword {
+            color: $color_radical_red_approx;
+        }
+    }
+    .attribute {
+        color: $color_atlantis_approx;
+    }
+    .built_in {
+        color: $color_atlantis_approx;
+    }
+    .value {
+        color: $color_golden_sand_approx;
+    }
+    .string {
+        color: $color_golden_sand_approx;
+    }
+    .number {
+        color: $color_blue_marguerite_approx;
+    }
+    .id {
+        color: $color_tree_poppy_approx;
+    }
+}

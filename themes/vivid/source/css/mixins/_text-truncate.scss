@@ -1,8 +1,15 @@
 // Text truncate
 // Requires inline-block or block for proper styling
 
-@mixin text-truncate() {
+@mixin text-truncate($line: 1) {
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    word-break: break-all;
+    word-wrap: break-word;
+
+    @if $line > 1 {
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: $line;
+    }
 }

@@ -82,13 +82,98 @@ ice-design-pro
 └── README.md        // 项目说明
 ```
 
+## Attributes
+
+| 参数      | 说明    | 类型      | 可选值       | 默认值   |
+|---------- |-------- |---------- |-------------  |-------- |
+| header | 设置 header，也可以通过 `slot#header` 传入 DOM | string| — | — |
+| body-style | 设置 body 的样式| object| — | { padding: '20px' } |
+
+## 高亮测试
+
+```css CSS
+// table
+> table {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 100%;
+    font-size: 14px;
+    border-collapse: collapse;
+    border: none;
+    border-spacing: 0;
+
+    >tbody {
+        > tr:nth-of-type(odd) {
+            background-color: #f9f9f9;
+        }
+    }
+
+    td,
+    th {
+        padding: 8px;
+        border: 1px solid #ddd;
+        vertical-align: middle;
+        word-break: break-word;
+    }
+
+    th {
+        font-weight: 700;
+        padding-bottom: 10px;
+        border-bottom-width: 2px;
+    }
+}
+```
+
+```js JavaScript
+// test commend
+/*
+* test commend
+*/
+utils = {
+	hasClass: function (ele, value) {
+		let curValue = ele.className;
+
+		return (' ' + curValue + ' ').indexOf(' ' + value + ' ') > -1;
+	},
+	addClass: function (ele, value) {
+		let curValue = ele.className;
+
+		if (!this.hasClass(ele, value)) {
+			ele.className = curValue.trim() + ' ' + value;
+		}
+	},
+	removeClass: function (ele, value) {
+		let curValue = ele.className;
+
+		if (this.hasClass(ele, value)) {
+			curValue = (' ' + curValue + ' ').replace(' ' + value + ' ', ' ');
+			ele.className = curValue.trim();
+		}
+	},
+	toggleClass: function (ele, value, stateVal) {
+		let curValue = ele.className;
+
+		if (typeof stateVal === 'boolean') {
+			return stateVal ? this.addClass(ele, value) : this.removeClass(ele, value);
+		}
+
+		if (this.hasClass(ele, value)) {
+			return this.removeClass(ele, value)
+		}
+
+		return this.addClass(ele, value);
+	}
+};
+```
+
 ## 使用
 
 1. (推荐) GUI 工具使用: 下载 [iceworks](https://alibaba.github.io/ice/#/iceworks)
 
 2. Cli 命令使用:
 
-```bash
+```shell
+# comment test
 $ npm start      // 启动预览服务器
 $ npm run build  // 构建 dist
 ```

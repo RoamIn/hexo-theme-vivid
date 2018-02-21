@@ -66,10 +66,11 @@
     }
 
     .summary {
-        overflow: hidden;
         font-size: 16px;
         line-height: 1.5;
         height: 16px * 3;
         color: #7f7f7f;
+
+        @include text-truncate(2);
     }
 }

@@ -1,0 +1,48 @@
+.gist {
+    margin: 0 -20px;
+    border-style: solid;
+    border-color: $color_alto_approx;
+    border-width: 1px 0;
+    background: $color_log_cabin_approx;
+    padding: 15px 20px 15px 0;
+    .gist-file {
+        border: none;
+        font-family: $font-family;
+        margin: 0;
+        .gist-data {
+            background: none;
+            border: none;
+            .line-numbers {
+                color: $color_storm_dust_approx;
+                background: none;
+                border: none;
+                padding: 0 20px 0 0;
+            }
+            .line-data {
+                padding: 0 !important;
+            }
+        }
+        .highlight {
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+        .gist-meta {
+            background: $color_log_cabin_approx;
+            color: highlight-comment;
+            font: 0.85em $font_5, $font_6, $font_7, $font_8;
+            //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+            text-shadow: 0 0;
+            padding: 0;
+            margin-top: 1em;
+            margin-left: 20px;
+            a {
+                color: $color_eastern_blue_approx;
+                font-weight: normal;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

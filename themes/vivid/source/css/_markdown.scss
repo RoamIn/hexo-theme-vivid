@@ -3,8 +3,12 @@
     @import "markdown/blockquote";
     @import "markdown/code";
     @import "markdown/h";
+    @import "markdown/hr";
     @import "markdown/img";
     @import "markdown/list";
     @import "markdown/p";
     @import "markdown/table";
+    @import "markdown/figure";
+
+    @import "markdown/highlight";
 }
