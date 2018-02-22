@@ -1,11 +1,13 @@
 body > footer {
-    height: 52px;
-    line-height: 52px;
+    padding: 12px 0;
     font-size: 14px;
     color: #ccc;
     text-align: center;
     border-top: 1px solid #474747;
     background-color: #161616;
     letter-spacing: 2px;
-    text-transform: uppercase;
+
+    .stats {
+        display: none;
+    }
 }

@@ -30,18 +30,6 @@
         background-color: #fefefe;
         transform: translateX(-100%);
         transition: transform .2s ease;
-
-        .nav-item {
-            display: block;
-            padding: 0 16px 0 12px;
-            height: 36px;
-            line-height: 36px;
-            font-size: 18px;
-
-            &.active {
-                background-color: #3c3c3c;
-            }
-        }
     }
 
     .backdrop {
@@ -66,5 +54,52 @@
             display: block;
             opacity: 1;
         }
+    }
+
+    .nav-item {
+        display: block;
+        padding: 0 16px 0 32px;
+        color: #080808;
+        line-height: 3;
+        font-size: 18px;
+
+        @include text-uppercase();
+
+        &.active {
+            background-color: #3c3c3c;
+        }
+
+        .icon {
+            margin-right: 12px;
+            font-size: 24px;
+            vertical-align: middle;
+        }
+    }
+
+    .avatar {
+        float: left;
+        overflow: hidden;
+        margin-right: 18px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+    .brand {
+        margin: 24px;
+        padding-bottom: 24px;
+        line-height: 30px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .nickname {
+        line-height: 30px;
+    }
+    .mail {
+        line-height: 30px;
+        color: #000004;
     }
 }

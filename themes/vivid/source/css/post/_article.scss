@@ -4,6 +4,7 @@ article {
     width: 1000px;
     border-radius: 3px;
     background-color: #fff;
+    border: 1px solid #dadada;
 
     @media screen and (max-width: 1169px) {
         width: calc(100% - 30px);
@@ -11,6 +12,7 @@ article {
     @media screen and (max-width: 767px) {
         width: 100%;
         padding: 40px 24px;
+        border: none;
     }
 
     header {

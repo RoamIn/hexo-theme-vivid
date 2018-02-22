@@ -11,9 +11,22 @@
         </i></button>
 
     <div class="drawer">
+        <div class="brand clearfix">
+            <a href="{{ url_for(theme.avatar_link) }}" class="avatar">
+                <img src="{{ url_for(theme.avatar) }}">
+            </a>
+            <h5 class="nickname">Vinci</h5>
+            <a href="mailto:ivill@live.com" title="ivill@live.com" class="mail">ivill@live.com</a>
+        </div>
         <nav class="menu-nav">
-            {% for link, path in theme.menu %}
-                {{ link_to(path, link, { class: 'nav-item' }) }}
+            {% for menu in theme.menu %}
+                <a href="{{ menu.url }}" title="{{ menu.text }}" class="nav-item">
+                    {#<i class="iconfont {{ menu.icon }}"></i>#}
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#{{ menu.icon }}"></use>
+                    </svg>
+                    {{ menu.text }}
+                </a>
             {% endfor %}
         </nav>
     </div>

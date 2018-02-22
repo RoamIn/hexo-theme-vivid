@@ -3,19 +3,30 @@ language: en
 
 # main menu navigation
 menu:
-  Home: /
-  About: /about
-  Archive: /archives
-  Tag: /tags
+  - url: /
+    text: Home
+    icon: icon-compas
+  - url: /archives
+    text: Archive
+    icon: icon-game
+  - url: /tags
+    text: Tag
+    icon: icon-calendar1
 
 favicon: favicon/favicon.ico
 
+# 你的头像url
+avatar: /img/avatar.jpg
+# avatar link
+avatar_link: /
+
 stylesheets:
-- /font/icon/iconfont.css
 - /css/common.css
+#- //at.alicdn.com/t/font_571373_8h84evj173z0k9.css
 
 scripts:
-- /font/icon/iconfont.js
 - /js/utils.js
 - /js/menu.js
 - /js/back-to-top.js
+- //at.alicdn.com/t/font_571373_8h84evj173z0k9.js
+- //dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js

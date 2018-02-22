@@ -13,3 +13,7 @@
         -webkit-line-clamp: $line;
     }
 }
+
+@mixin text-uppercase() {
+    text-transform: uppercase;
+}
