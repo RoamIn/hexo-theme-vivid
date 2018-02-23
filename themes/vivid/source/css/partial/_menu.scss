@@ -66,13 +66,12 @@
         @include text-uppercase();
 
         &.active {
-            background-color: #3c3c3c;
+            background-color: #f6f6f6;
         }
 
         .icon {
             margin-right: 12px;
-            font-size: 24px;
-            vertical-align: middle;
+            font-size: 1.3em;
         }
     }
 

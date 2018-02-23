@@ -30,6 +30,13 @@ article {
         color: #999;
     }
 
+    .post-meta-item-text {
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+
+
     .post-meta-divider {
         margin: 0 0.5em;
     }

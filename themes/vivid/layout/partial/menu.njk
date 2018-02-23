@@ -1,5 +1,6 @@
 <div id="J_Menu" class="menu">
-    <button id="J_MenuSwitch" class="switch"><i class="icon">
+    <button id="J_MenuSwitch" class="switch">
+        <i class="icon">
             <svg viewBox="0 0 20 20" preserveAspectRatio="xMidYMid meet"
                  style="pointer-events: none; display: block; width: 100%; height: 100%;">
                 <g>
@@ -8,7 +9,8 @@
                     <rect x="2" y="14" width="16" height="2"></rect>
                 </g>
             </svg>
-        </i></button>
+        </i>
+    </button>
 
     <div class="drawer">
         <div class="brand clearfix">
@@ -20,7 +22,7 @@
         </div>
         <nav class="menu-nav">
             {% for menu in theme.menu %}
-                <a href="{{ menu.url }}" title="{{ menu.text }}" class="nav-item">
+                <a href="{{ menu.url }}" title="{{ menu.text }}" class="nav-item {{ 'active' if is_current(menu.url) else '' }}">
                     {#<i class="iconfont {{ menu.icon }}"></i>#}
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#{{ menu.icon }}"></use>

@@ -1,7 +1,11 @@
 ---
 title: 赋能中后台建设 ice
 date: 2018-12-20 12:00:00
-tags: ice alibaba
+tags:
+    - ice
+    - alibaba
+categories: test
+
 pho: https://alpha.wallhaven.cc/wallpapers/thumb/small/th-476624.jpg
 ---
 

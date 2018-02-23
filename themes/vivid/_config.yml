@@ -5,13 +5,16 @@ language: en
 menu:
   - url: /
     text: Home
-    icon: icon-compas
+    icon: icon-home
+  - url: /categories
+    text: Categories
+    icon: icon-foler
   - url: /archives
     text: Archive
-    icon: icon-game
+    icon: icon-archive
   - url: /tags
     text: Tag
-    icon: icon-calendar1
+    icon: icon-tag
 
 favicon: favicon/favicon.ico
 
@@ -28,5 +31,10 @@ scripts:
 - /js/utils.js
 - /js/menu.js
 - /js/back-to-top.js
-- //at.alicdn.com/t/font_571373_8h84evj173z0k9.js
+- //at.alicdn.com/t/font_571373_xzvgb69ewakprpb9.js
 - //dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js
+
+# 是否开启toc
+# toc: false
+toc:
+  list_number: true  # 是否显示数字排序

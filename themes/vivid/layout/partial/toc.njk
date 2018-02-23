@@ -1,0 +1,11 @@
+{% if theme.toc %}
+    {% set topic = toc(page.content)%}
+{% endif %}
+{% if topic %}
+<aside class="post-widget">
+    <nav class="post-toc-wrap post-toc-shrink" id="J_Toc">
+        <h4>TOC</h4>
+        {{ topic }}
+    </nav>
+</aside>
+{% endif %}
