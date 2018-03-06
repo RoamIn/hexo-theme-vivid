@@ -2,11 +2,13 @@
     {% for article in page.posts.data %}
         <div class="article-card">
             <a href="{{ article.path }}">
-                <time datetime="{{ article.date }}">
-                    <span class="day">{{ date(article.date, 'D') }}</span>
-                    <span class="month-and-year">{{ date(article.date, 'MMM. YYYY') }}</span>
-                </time>
-                <img class="cover" src="{{ article.pho }}" alt="article cover">
+                <div class="cover">
+                    <time datetime="{{ article.date }}">
+                        <span class="day">{{ date(article.date, 'D') }}</span>
+                        <span class="month-and-year">{{ date(article.date, 'MMM. YYYY') }}</span>
+                    </time>
+                    <img src="{{ article.pho }}" alt="article cover">
+                </div>
                 <div class="info">
                     <h3 class="title">{{ article.title }}</h3>
                     <p class="summary">

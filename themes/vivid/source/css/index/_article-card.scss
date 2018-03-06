@@ -45,6 +45,12 @@
         }
     }
 
+    .cover {
+        padding-bottom: percentage(1 / (300 / 200)); // because img size is 300 x 200
+        height: 0;
+        background-color: #fff;
+    }
+
     img {
         width: 100%;
         vertical-align: middle;
