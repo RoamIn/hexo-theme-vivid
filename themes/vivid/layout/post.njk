@@ -37,8 +37,8 @@
         <div class="markdown article-body post-body">
             {{ page.content }}
         </div>
-        <div class="toc">
-            {% include 'partial/toc.njk' %}
-        </div>
     </article>
+    <aside>
+        {% include 'partial/toc.njk' %}
+    </aside>
 {% endblock %}

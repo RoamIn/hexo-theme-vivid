@@ -1,6 +1,6 @@
-<div class="article-card-list">
+<ul class="article-card-list">
     {% for article in page.posts.data %}
-        <div class="article-card">
+        <li class="article-card">
             <a href="{{ article.path }}">
                 <div class="cover">
                     <time datetime="{{ article.date }}">
@@ -16,6 +16,6 @@
                     </p>
                 </div>
             </a>
-        </div>
+        </li>
     {% endfor %}
-</div>
+</ul>
