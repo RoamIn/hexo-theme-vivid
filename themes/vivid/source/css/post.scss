@@ -14,7 +14,10 @@ body {
 }
 
 main {
+    display: flex;
+    margin: 0 auto;
     padding: 30px 15px 40px;
+    width: 90%;
 
     @media screen and (max-width: 767px) {
         padding: 0;

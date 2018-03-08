@@ -17,7 +17,7 @@ In cooking...
 - tag 页面制作
 
 
-## Editor
+## Goals
 
 考虑 electron
 
