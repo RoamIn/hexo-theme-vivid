@@ -6,13 +6,13 @@ menu:
   - url: /
     text: Home
     icon: icon-home
-  - url: /categories
+  - url: /categories/
     text: Categories
     icon: icon-categorie
-  - url: /archives
+  - url: /archives/
     text: Archive
     icon: icon-archive
-  - url: /tags
+  - url: /tags/
     text: Tag
     icon: icon-tag
 
