@@ -1,6 +1,6 @@
 ---
-title: 彼岸一季
-date: 2014-02-03 08:00:00
+title: 你不知道我特别羡慕你特立独行的样子
+date: 2013-12-08 07:00:00
 tags: test
 pho: https://alpha.wallhaven.cc/wallpapers/thumb/small/th-618670.jpg
 ---
