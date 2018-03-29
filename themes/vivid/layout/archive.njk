@@ -5,9 +5,9 @@
     {### ARCHIVE BLOCK ###}
     {#####################}
     <section class="archive-block">
-        <h2 class="archive-page-counter">
+        {# <h2 class="archive-page-counter">
            非常好! 目前共计 {{ site.posts.length }} 篇日志。 继续努力。 
-        </h2>
+        </h2> #}
 
         {% set currentYear = 0 %}
         {% for post in page.posts.data %}
@@ -21,10 +21,9 @@
             {% endif %}
 
             <div class="post">
-                <h2 class="post-title">
-                    <time>{{ date(post.date, 'MM-DD') }}</time>
-                    {{ post.title }}
-                </h2>
+                <i class="dot"></i>
+                <time>{{ date(post.date, 'MM-DD') }}</time>
+                <h2 class="post-title">{{ post.title }}</h2>
             </div>
         {% endfor %}
         </div>

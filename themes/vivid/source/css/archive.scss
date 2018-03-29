@@ -11,9 +11,11 @@ main {
     padding: 30px 15px 40px;
 }
 
+$border-color: #d4d9df;
+$x-gap: 20px;
+
 .archive-block {
-    overflow: hidden;
-    margin: 0 auto;
+    margin: 60px auto;
     max-width: 980px;
 
     .archive-page-counter {
@@ -23,52 +25,54 @@ main {
     }
 
     .archive-meta {
-        float: left;
-        width: 20%;
-        padding: 60px 20px;
-        text-align: right;
+        padding: 40px 0;
         color: #555;
     }
 
     .post {
-        float: right;
-        width: 80%;
-        padding: 40px 20px;
-        border-left: 2px solid #eee;
+        position: relative;
+        padding: 40px $x-gap;
+        border-left: 2px dashed $border-color;
+
+        time {
+            position: absolute;
+            left: -60px;
+            font-size: 12px;
+        }
+    }
+
+    .dot {
+        $size: 14px;
+
+        position: absolute;
+        left: -1px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: $size;
+        height: $size;
+        background-color: #fff;
+        border: 1px solid $border-color;
+        border-radius: 50%;
+        transition: background .2s ease-in-out;
+
+        &:after {
+            content: " ";
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: $size - 8;
+            height: $size - 8;
+            border-radius: 50%;
+            background-color: $border-color;
+            transition: all .2s ease-in-out;
+        }
     }
 
     .post-title {
-        position: relative;
+        display: inline-block;
         font-size: 16px;
         color: #24292e;
-        border-bottom: 1px dashed #eaecef;
-
-        &:hover {
-            border-bottom-color: #ccc;
-
-            &:before {
-                background: #222;
-            }
-        }
-
-        &:before {
-            content: " ";
-            position: absolute;
-            left: -20px;
-            top: 12px;
-            width: 6px;
-            height: 6px;
-            background: #bbb;
-            border-radius: 50%;
-            border: 1px solid #fff;
-            transition-duration: 0.2s;
-            transition-timing-function: ease-in-out;
-            transition-delay: 0s;
-            transition-property: background;
-        }
-
-        time {
-            font-size: 12px;
-        }
     }
 }
