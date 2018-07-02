@@ -29,4 +29,15 @@ a {
         transform: scaleX(0);
         transition: transform .2s ease-in-out 0s;
     }
+
+    &[target=_blank] {
+        &:hover:after {
+            visibility: visible;
+        }
+
+        &:after {
+            visibility: hidden;
+            content: " \21B5 ";
+        }
+    }
 }

@@ -65,8 +65,12 @@
 
         @include text-uppercase();
 
-        &.active {
+        &:hover {
             background-color: #f6f6f6;
+        }
+
+        &.active {
+            background-color: #f0f0f0;
         }
 
         .icon {
