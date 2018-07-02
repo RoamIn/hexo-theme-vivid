@@ -7,9 +7,10 @@ body {
     min-height: 100vh;
     background-color: #f6f6f6;
 
-    @include hide-scrollbar;
+    //@include hide-scrollbar;
 }
 
 main {
     padding: 30px 15px 40px;
+    min-height: calc(100vh - 124px);
 }

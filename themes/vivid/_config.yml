@@ -32,6 +32,9 @@ scripts:
 - /js/menu.js
 - /js/back-to-top.js
 - //at.alicdn.com/t/font_571373_j2537mv1vh88h0k9.js
+- //cdn.bootcss.com/jquery/3.3.1/jquery.min.js
+- //cdn.bootcss.com/velocity/2.0.4/velocity.min.js
+# 访问量统计
 - //dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js
 
 # 是否开启toc

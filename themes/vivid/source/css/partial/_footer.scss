@@ -1,10 +1,13 @@
 body > footer {
     padding: 12px 0;
+    min-height: 72px;
     font-size: 14px;
     color: #ccc;
     text-align: center;
-    border-top: 1px solid #474747;
-    background-color: #161616;
+    border-top: 2px solid rgba(47, 47, 47, 0.98);
+    border-bottom: 2px solid rgba(47, 47, 47, 0.98);
+    background: url("../img/space.gif") #161616;
+
     letter-spacing: 2px;
 
     .stats {

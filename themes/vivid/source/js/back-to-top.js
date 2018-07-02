@@ -29,9 +29,10 @@ $backToTop.addEventListener('click', function () {
 	cancelAnimationFrame(timer);
 	timer = requestAnimationFrame(function fn() {
 		const scrollTop = window.pageYOffset;
+		const halfTop = scrollTop * 0.8
 
 		if (scrollTop > 0) {
-			window.scrollTo(0, scrollTop - 50);
+			window.scrollTo(0, halfTop > 5 ? halfTop : 0);
 
 			timer = requestAnimationFrame(fn);
 		} else {
