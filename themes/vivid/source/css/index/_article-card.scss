@@ -1,5 +1,11 @@
 .article-card-list {
+    margin: 0 -15px;
     @include clearfix;
+
+    @media screen and (max-width: 767px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
     .article-card {
         position: relative;
