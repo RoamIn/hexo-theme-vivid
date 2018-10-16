@@ -25,9 +25,11 @@ avatar_link: /
 
 stylesheets:
 - /css/common.css
+- //cdnjs.cloudflare.com/ajax/libs/tocbot/4.1.1/tocbot.css
 #- //at.alicdn.com/t/font_571373_8h84evj173z0k9.css
 
 scripts:
+- //cdnjs.cloudflare.com/ajax/libs/tocbot/4.1.1/tocbot.min.js
 - /js/utils.js
 - /js/menu.js
 - /js/back-to-top.js
