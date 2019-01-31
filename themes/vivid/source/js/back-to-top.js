@@ -6,37 +6,41 @@ function getContentVisibilityHeight() {
 	const documentHeight = document.documentElement.offsetHeight;
 	const windowHeight = window.innerHeight;
 	const contentVisibilityHeight = documentHeight - windowHeight;
-	
+
 	return contentVisibilityHeight;
 }
 
-window.addEventListener('scroll', function () {
-	const THRESHOLD = 50;
-	const scrollTop = window.pageYOffset;
-	const contentVisibilityHeight = getContentVisibilityHeight();
-	const scrollPercent = (scrollTop) / (contentVisibilityHeight);
-	const scrollPercentRounded = Math.round(scrollPercent * 100);
-	const scrollPercentMaxed = (scrollPercentRounded > 100) ? 100 : scrollPercentRounded;
 
-	Vivid.utils.toggleClass($backToTop, 'active', scrollTop > THRESHOLD);
+function bind () {
+    window.addEventListener('scroll', function () {
+        const THRESHOLD = 50;
+        const scrollTop = window.pageYOffset;
+        const contentVisibilityHeight = getContentVisibilityHeight();
+        const scrollPercent = (scrollTop) / (contentVisibilityHeight);
+        const scrollPercentRounded = Math.round(scrollPercent * 100);
+        const scrollPercentMaxed = (scrollPercentRounded > 100) ? 100 : scrollPercentRounded;
 
-	$backToTopNum.innerHTML = scrollPercentMaxed;
-});
+        Vivid.utils.toggleClass($backToTop, 'active', scrollTop > THRESHOLD);
 
-$backToTop.addEventListener('click', function () {
-	let timer = null;
+        $backToTopNum.innerHTML = scrollPercentMaxed;
+    });
 
-	cancelAnimationFrame(timer);
-	timer = requestAnimationFrame(function fn() {
-		const scrollTop = window.pageYOffset;
-		const halfTop = scrollTop * 0.8
+    $backToTop.addEventListener('click', function () {
+        let timer = null;
 
-		if (scrollTop > 0) {
-			window.scrollTo(0, halfTop > 5 ? halfTop : 0);
+        cancelAnimationFrame(timer);
+        timer = requestAnimationFrame(function fn() {
+            const scrollTop = window.pageYOffset;
+            const halfTop = scrollTop * 0.8
 
-			timer = requestAnimationFrame(fn);
-		} else {
-			cancelAnimationFrame(timer);
-		}
-	});
-});
+            if (scrollTop > 0) {
+                window.scrollTo(0, halfTop > 5 ? halfTop : 0);
+
+                timer = requestAnimationFrame(fn);
+            } else {
+                cancelAnimationFrame(timer);
+            }
+        });
+    });
+
+}

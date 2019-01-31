@@ -1,15 +1,35 @@
 body > footer {
-    padding: 12px 0;
-    min-height: 72px;
-    font-size: 14px;
-    color: #ccc;
-    text-align: center;
-    border-top: 2px solid rgba(47, 47, 47, 0.98);
-    background: url("../img/space.gif") #161616;
+  padding: 12px 0;
+  min-height: 72px;
+  font-size: 14px;
+  color: #ccc;
+  text-align: center;
+  font-weight: 400;
+  border-top: 2px solid rgba(47, 47, 47, 0.98);
+  background: url("../img/space.gif") #161616;
+  letter-spacing: 2px;
+  .stats {
+    display: none;
+  }
+  .blinky {
+    color: transparent;
+    animation: blinky 10s infinite;
+  }
+}
 
-    letter-spacing: 2px;
-
-    .stats {
-        display: none;
-    }
+@keyframes blinky {
+  21%, 39%, 45%, 47%, 53% {
+    color: #111;
+    text-shadow: none
+  }
+  26%, 38%, 40%, 44%, 46%, 48% {
+    color: #6897fd;
+    text-shadow: 0 0 5px #4c84ff,
+    0 0 15px #4c84ff,
+    0 0 25px #4c84ff,
+    0 0 35px #f00,
+    0 0 50px #f00,
+    0 0 65px #f00,
+    0 0 100px #f00
+  }
 }

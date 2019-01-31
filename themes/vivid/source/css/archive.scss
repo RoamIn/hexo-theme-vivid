@@ -2,13 +2,14 @@
 @import "mixins";
 
 body {
-    min-height: 100vh;
+}
 
-    @include hide-scrollbar;
+header {
+    display: none;
 }
 
 main {
-    padding: 30px 15px 40px;
+    
 }
 
 $border-color: #d4d9df;

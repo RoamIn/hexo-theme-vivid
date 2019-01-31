@@ -5,8 +5,11 @@ group: Overview
 order: 1.1
 version: 2.1
 date: 2018-12-22 12:00:00
-tags: weex
-pho: https://alpha.wallhaven.cc/wallpapers/thumb/small/th-531227.jpg
+categories:
+- 技术
+tags:
+- weex
+cover: https://alpha.wallhaven.cc/wallpapers/thumb/small/th-531227.jpg
 ---
 
 <!-- toc -->

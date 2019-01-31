@@ -1,8 +1,11 @@
 ---
 title: Markdown
 date: 2018-12-30 08:00:00
-tags: markdown highlight
-pho: https://alpha.wallhaven.cc/wallpapers/thumb/small/th-627114.jpg
+categories:
+- 技术
+tags:
+- markdown highlight
+cover: http://pky7jh69x.bkt.clouddn.com/bg1.jpg
 ---
 ---
 __Advertisement :)__

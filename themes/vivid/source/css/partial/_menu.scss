@@ -1,21 +1,18 @@
 .menu {
     $menu-width: 256px;
 
+    padding: 10px 15px 0;
+
     .switch {
-        position: absolute;
-        top: 8px;
-        left: 8px;
-        padding: 8px;
-        width: 40px;
-        height: 40px;
+        padding: 0;
+        line-height: 0;
+        font-size: 24px;
         border: none;
         box-sizing: border-box;
         outline: none;
         background: none;
-        fill: #3c3c3c;
         cursor: pointer;
         user-select: none;
-        transition: left .2s ease;
     }
 
     .drawer {

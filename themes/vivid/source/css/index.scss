@@ -4,13 +4,14 @@
 @import "index/article-card";
 
 body {
-    min-height: 100vh;
     background-color: #f6f6f6;
-
-    @include hide-scrollbar;
+    background-image:
+            radial-gradient(#eee 10%, transparent 10%),
+            radial-gradient(#eee 10%, transparent 10%);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
 }
 
 main {
-    padding: 30px 15px 40px;
-    min-height: calc(100vh - 122px);
+    
 }
