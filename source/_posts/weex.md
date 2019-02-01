@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: Weex 简介以及入门，从入门到放弃，从放弃到重启，从重启到精通系列，樯橹灰飞烟灭
 type: guide
 group: Overview
 order: 1.1
@@ -11,8 +11,6 @@ tags:
 - weex
 cover: https://alpha.wallhaven.cc/wallpapers/thumb/small/th-531227.jpg
 ---
-
-<!-- toc -->
 
 ## What is Weex?
 

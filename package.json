@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.7.1"
+    "version": "3.8.0"
   },
   "scripts": {
     "dev": "hexo clean && hexo server"
@@ -19,7 +19,6 @@
     "hexo-generator-tag": "^0.2.0",
     "hexo-helper-qrcode": "^1.0.2",
     "hexo-renderer-marked": "^0.3.0",
-    "hexo-renderer-njks": "^0.1.0",
     "hexo-renderer-sass": "^0.3.2",
     "hexo-server": "^0.2.0",
     "tocbot": "^4.4.0"

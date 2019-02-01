@@ -28,9 +28,7 @@
 {{ favicon_tag(theme.favicon) }}
 {% if theme.stylesheets !== undefined and theme.stylesheets.length > 0 %}
     {# stylesheet list from config.yml #}
-    {% for url in theme.stylesheets %}
-        {{ css(url) }}
-    {% endfor %}
+    {{ css(theme.stylesheets) }}
 {% endif %}
 
 {% if is_home() %}

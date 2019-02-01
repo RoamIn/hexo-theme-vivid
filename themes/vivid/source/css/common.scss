@@ -1,23 +1,33 @@
 // Core variables and mixins
 @import "variables";
 @import "mixins";
-
 // Fonts
 @import "fonts";
-
 // Reset
 @import "reboot";
-
 // Utility classes
 @import "utilities";
-
 // Partial
 @import "partial";
 
 ::selection {
-    //background-color: #fdf574;
+  //background-color: #fdf574;
 }
 
 body {
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  & > header {
+
+  }
+
+  & > main {
+    flex: auto;
+  }
+
+  & > footer {
+
+  }
 }

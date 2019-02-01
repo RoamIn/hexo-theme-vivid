@@ -7,8 +7,8 @@ tags:
 - markdown highlight
 cover: http://pky7jh69x.bkt.clouddn.com/bg1.jpg
 ---
----
-__Advertisement :)__
+
+Advertisement :)
 
 - __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
   resize in browser.

@@ -3,18 +3,18 @@ language: en
 
 # main menu navigation
 menu:
-  - url: /
-    text: Home
-    icon: icon-home
-  - url: /categories/
-    text: Categories
-    icon: icon-categorie
-  - url: /archives/
-    text: Archive
-    icon: icon-archive
-  - url: /tags/
-    text: Tag
-    icon: icon-tag
+- url: /
+  text: Home
+  icon: icon-home
+- url: /categories/
+  text: Categories
+  icon: icon-categorie
+- url: /archives/
+  text: Archive
+  icon: icon-archive
+- url: /tags/
+  text: Tag
+  icon: icon-tag
 
 favicon: favicon/favicon.ico
 
@@ -34,7 +34,8 @@ scripts:
 - /js/menu.js
 - /js/back-to-top.js
 - /js/toc.js
-- //at.alicdn.com/t/font_571373_j2537mv1vh88h0k9.js
+# iconfont
+- //at.alicdn.com/t/font_571373_hbwchrn0pym.js
 - //cdn.bootcss.com/jquery/3.3.1/jquery.min.js
 - //cdn.bootcss.com/velocity/2.0.4/velocity.min.js
 # 访问量统计

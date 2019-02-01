@@ -1,58 +1,58 @@
 article {
-    margin: 0 auto;
-    padding: 40px 0 70px;
-    width: 700px;
-    background-color: #fff;
+  margin: 0 auto;
+  padding: 40px 0 70px;
+  width: 700px;
+  background-color: #fff;
 
-    @media screen and (max-width: 1169px) {
-        width: calc(100% - 30px);
+  @media screen and (max-width: 1169px) {
+    width: calc(100% - 30px);
+  }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    padding: 40px 24px;
+    border: none;
+  }
+
+  header {
+
+  }
+
+  .post-title {
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .post-stuff {
+    margin-top: 20px;
+    color: #666;
+    font-size: 13px;
+
+    & > span {
+      display: inline-block;
+      margin-right: 20px;
     }
-    @media screen and (max-width: 767px) {
-        width: 100%;
-        padding: 40px 24px;
-        border: none;
+  }
+
+  .post-body {
+    &:before,
+    &:after {
+      content: "";
+      height: 15px;
+      width: 15px;
+      display: block;
     }
 
-    header {
-       
+    &:before {
+      border-top: 2px solid;
+      border-right: 2px solid;
+      margin: 20px -20px 30px auto;
     }
-
-    .post-title {
-        font-size: 30px;
-        line-height: 1.3;
-        font-weight: bold;
-        color: #333;
+    &:after {
+      border-bottom: 2px solid;
+      border-left: 2px solid;
+      margin: 30px auto 20px -20px;
     }
-
-    .post-stuff {
-        margin-top: 20px;
-        color: #666;
-        font-size: 13px;
-  
-        & > span {
-          display: inline-block;
-          margin-right: 20px;
-        }
-    }
-
-    .post-body {
-        &:before,
-        &:after {
-            content: "";
-            height: 15px;
-            width: 15px;
-            display: block;
-        }
-
-        &:before {
-            border-top: 2px solid;
-            border-right: 2px solid;
-            margin: 20px -20px 30px auto;
-        }
-        &:after {
-            border-bottom: 2px solid;
-            border-left: 2px solid;
-            margin: 30px auto 20px -20px;
-        }
-    }
+  }
 }

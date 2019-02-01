@@ -1,49 +1,50 @@
 :root {
-    font-family: PingFang SC,Helvetica Neue,Helvetica,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-font-smoothing: antialiased;
+  font-family: PingFang SC, Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, .8);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    //padding-left: calc(100vw - 100%); // avoid scrollbar width
+  //padding-left: calc(100vw - 100%); // avoid scrollbar width
 }
 
 body,
 p,
 h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+  margin: 0;
 }
 
 textarea {
-    margin: 0; // Remove the margin in Firefox and Safari
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
+  margin: 0; // Remove the margin in Firefox and Safari
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 a {
-    text-decoration: none;
-    color: #4c84ff;
+  text-decoration: none;
+  color: #4c84ff;
 }
 
 ul,
 ol {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 figure {
-    margin: 0;
+  margin: 0;
 }

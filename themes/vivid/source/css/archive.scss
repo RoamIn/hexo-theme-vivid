@@ -5,75 +5,71 @@ body {
 }
 
 header {
-    display: none;
+  display: none;
 }
 
 main {
-    
+
 }
 
-$border-color: #d4d9df;
-$x-gap: 20px;
+.archive-page {
+  padding: 30px;
 
-.archive-block {
-    margin: 60px auto;
-    max-width: 980px;
 
-    .archive-page-counter {
-        padding-left: 20%;
-        line-height: 2;
-        border-bottom: 1px solid #e1e4e8;
+  &-title {
+    padding: 23px 0 19px;
+    margin: 0 0 20px;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+.archive-stats {
+  margin-bottom: 5px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 40px;
+  color: #444;
+}
+
+.archive-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 14px;
+
+  &-item {
+    margin: 0 10px 10px 0;
+  }
+
+  .archive-year {
+
+  }
+
+  .archive-date {
+    position: relative;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .post {
+    display: block;
+    width: 220px;
+
+    &-cover {
+      display: block;
+      padding-bottom: percentage(1 / (300 / 200)); // because img size is 300 x 200
+      height: 0;
+      background: #000 0/cover;
     }
 
-    .archive-meta {
-        padding: 40px 0;
-        color: #555;
-    }
-
-    .post {
-        position: relative;
-        padding: 40px $x-gap;
-        border-left: 2px dashed $border-color;
-
-        time {
-            position: absolute;
-            left: -60px;
-            font-size: 12px;
-        }
-    }
-
-    .dot {
-        $size: 14px;
-
-        position: absolute;
-        left: -1px;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: $size;
-        height: $size;
-        background-color: #fff;
-        border: 1px solid $border-color;
-        border-radius: 50%;
-        transition: background .2s ease-in-out;
-
-        &:after {
-            content: " ";
-            display: block;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            width: $size - 8;
-            height: $size - 8;
-            border-radius: 50%;
-            background-color: $border-color;
-            transition: all .2s ease-in-out;
-        }
+    &-info {
+      padding: 10px;
+      font-size: 14px;
+      color: #666;
     }
 
     .post-title {
-        display: inline-block;
-        font-size: 16px;
-        color: #24292e;
+      font-size: 12px;
     }
+  }
 }

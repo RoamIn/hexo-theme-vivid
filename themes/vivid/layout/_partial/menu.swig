@@ -1,6 +1,6 @@
 <div id="J_Menu" class="menu">
     <button id="J_MenuSwitch" class="switch">
-        <svg id="J_MenuSwitch" class="icon" aria-hidden="true">
+        <svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-menu"></use>
         </svg>
     </button>
@@ -15,7 +15,7 @@
         </div>
         <nav class="menu-nav">
             {% for menu in theme.menu %}
-                <a href="{{ menu.url }}" title="{{ menu.text }}" class="nav-item {{ 'active' if is_current(menu.url) else '' }}">
+                <a href="{{ menu.url }}" title="{{ menu.text }}" class="nav-item {{ is_current(menu.url) ? 'active' : '' }}">
                     {#<i class="iconfont {{ menu.icon }}"></i>#}
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#{{ menu.icon }}"></use>
